@@ -18,6 +18,6 @@ CREATE TABLE videos_t
     title          VARCHAR(40) not null,
     url            VARCHAR(200) not null,
     audio          BYTEA,
-    transcript     JSONB,
+    transcript     JSON,
     creation_date  DATE default CURRENT_DATE
 );
